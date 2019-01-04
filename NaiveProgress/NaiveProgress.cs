@@ -35,10 +35,6 @@ namespace NaiveProgress
         protected virtual void OnReport(T value)
         {
             ProgressChanged?.Invoke(this, value);
-
-            var progress = new Progress<TimeSpan>((e) =>
-            {
-            });
         }
 
         void IProgress<T>.Report(T value) => OnReport(value);
