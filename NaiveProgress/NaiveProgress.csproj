@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>bloomtom</Authors>
+    <Description>Provides an implementation of IProgress&lt;T&gt; which does nothing fancy. A synchronization context isn't captured. The thread pool isn't touched. Progress reports are simply handed off to an event in the order they are received.</Description>
+    <Copyright>MIT</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>IProgress Progress</PackageTags>
+    <PackageProjectUrl>https://github.com/bloomtom/NaiveProgress</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bloomtom/NaiveProgress</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\NaiveProgress.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
